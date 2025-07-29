@@ -6,10 +6,6 @@ __pycache__/
 *.pyd
 *.so
 
-# IDE/Editor settings
-
-.idea/
-
 # Cache
 *.cache
 __pycache__/
