@@ -35,4 +35,4 @@ The site includes interactive sections, resume download, and links to GitHub and
 
 
 ## Run the Application
-uvicorn main:app --reload
+python -m uvicorn main:app --reload
