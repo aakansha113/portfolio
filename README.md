@@ -30,7 +30,7 @@ The site includes interactive sections, resume download, and links to GitHub and
 ## Create Virtual Environment & Install Dependencies
 1-python -m venv venv
 2-source venv/bin/activate    
-# On Windows: venv\Scripts\activate
+#On Windows: venv\Scripts\activate
 3-pip install -r requirements.txt
 
 
