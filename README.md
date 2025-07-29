@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 DevOps Portfolio 🌐
 A personal portfolio web application built using **FastAPI**, showcasing DevOps skills, projects, and experience.  
 The site includes interactive sections, resume download, and links to GitHub and contact details.
