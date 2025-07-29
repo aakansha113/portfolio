@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aakansha | DevOps Engineer</title>
+  <link rel="stylesheet" href="/static/style.css">
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Aakansha Hujare</h1>
+    <p>DevOps Engineer | AWS Cloud | Automation | CI/CD | Docker | Linux</p>
+  </header>
+
+  <!-- About Me -->
+  <section>
+    <div data-aos="fade-up">
+      <h2>About Me</h2>
+      <p>
+        DevOps Engineer skilled in building scalable CI/CD pipelines, Infrastructure as Code (IaC),
+        and automating cloud deployments. I specialize in building secure infrastructure using AWS,
+        Docker, and Kubernetes. My goal is to streamline processes and accelerate software delivery
+        while maintaining high availability and performance.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section>
+    <div data-aos="fade-up">
+      <h2>Skills</h2>
+      <ul>
+        <li>🐳 Docker & Kubernetes</li>
+        <li>☁ AWS Cloud (EC2, S3, IAM, EBS)</li>
+        <li>⚙ CI/CD Tools (GitHub Actions, Jenkins)</li>
+        <li>🐧 Linux + Bash</li>
+        <li>🔐 Monitoring & Security</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <div data-aos="fade-up">
+      <h2>Experience</h2>
+      <div class="experience-item">
+        <h3>DevOps Intern – Leank(kei) India Service PVT. LTD.</h3>
+        <p class="duration">Nov 2024 – Present</p>
+        <ul>
+          <li>Developed and managed CI/CD pipelines using GitHub Actions</li>
+          <li>Deployed apps to AWS EC2 with Docker and automated scripts</li>
+          <li>Configured IAM roles and monitored cloud infrastructure</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section>
+    <div data-aos="fade-up">
+      <h2>Projects</h2>
+    </div>
+    <div id="projects">
+      
+      <div data-aos="fade-up">
+        <h3>Dockerized FastAPI App</h3>
+        <p>
+          Built a FastAPI-based Python application, containerized using Docker. It provides basic JSON API
+          endpoints and can be used as a starting point for microservices.
+        </p>
+        <a href="https://github.com/aakansha113/dockerized-fastapi-app" target="_blank" class="resume-btn">🔗 View Code</a>
+      </div>
+
+      <div data-aos="fade-up">
+        <h3>FastAPI with PostgreSQL (Docker Compose)</h3>
+        <p>
+          Built a full-stack project using FastAPI and PostgreSQL connected via Docker Compose.
+          Includes REST API backend, database persistence, structured project layout, and development-ready configuration.
+        </p>
+        <a href="https://github.com/aakansha113/fastapi-docker-postgress-compose" target="_blank" class="resume-btn">🔗 View Code</a>
+      </div>
+      
+      <div data-aos="fade-up">
+        <h3>Node-RDS-App</h3>
+        <p>
+        Integrated AWS RDS (MySQL) with Node.js application, Dockerized for deployment on EC2.
+        Features secure DB connectivity, environment-based configuration, and production-ready setup.
+        </p>
+        <a href="https://github.com/aakansha113/node-rds-app" target="_blank" class="resume-btn">🔗 View Code</a>
+      </div>
+
+      <!-- <div data-aos="fade-up">
+        <h3>DevOps Portfolio Website</h3>
+        <p>
+          This project showcases a portfolio website built using HTML, CSS, and FastAPI, deployed using CI/CD pipelines.
+          Sections include About, Skills, Projects, and Contact.
+        </p>
+      </div>
+
+      <div data-aos="fade-up">
+        <h3>Dockerized Node App</h3>
+        <p>
+          Created a containerized Node.js application with multi-stage Docker builds and deployed using
+          GitHub Actions to AWS EC2.
+        </p>
+      </div>
+
+      <div data-aos="fade-up">
+        <h3>Kubernetes Monitoring Setup</h3>
+        <p>
+          Set up Prometheus and Grafana on a Kubernetes cluster for full observability of services and nodes.
+        </p>
+      </div> -->
+
+    </div>
+  </section>
+
+  <!-- Resume Download -->
+  <section>
+    <div data-aos="zoom-in">
+      <h2>Download Resume</h2>
+      <h3>Interested in my profile? Grab a copy of my resume below.</h3>
+      <a href="/static/resume/Aakansha_Resume.pdf" download class="resume-btn">📄 Download My Resume</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <footer>
+    <p>Contact</p>
+    <div class="contact">
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aakanshahujare@gmail.com">
+        <i class="fas fa-envelope"></i> Gmail
+      </a> |
+      <a href="https://www.linkedin.com/in/aakansha-hujare-3bb397229/" target="_blank">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a> |
+      <a href="https://github.com/aakansha113" target="_blank">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+    </div>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    fetch('http://13.220.197.165:8000/projects')
+      .then(res => res.json())
+      .then(data => console.log(data));
+  </script>
+</body>
+</html>
